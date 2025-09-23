@@ -10,19 +10,19 @@ import { payWithEthOnBase } from "./ethBasePay";
 export default function AquaTeeStorefront() {
   const CONTACT_EMAIL = "aquasmith@proton.me"; // TODO
   const HERO_VIDEO = ""; // optional landing video (kept, but rest is flat UI)
-  const RECEIVING_ADDRESS = "0x742d35Cc6634C0532925a3b8D0C4C4C4C4C4C4C4"; // TODO: Replace with your actual Base wallet address (must be valid EOA on Base)
+  const RECEIVING_ADDRESS = "0xD1C30c35B40D7130dCd030FAD70B1d081A191744"; // TODO: Replace with your actual Base wallet address (must be valid EOA on Base)
 
   const products = useMemo(
     () => [
-      { id: "tee-01", title: "Bricked Up", price: 35, checkoutUrl: "https://buy.stripe.com/test_123", img: "/shirts/brickedup.jpg", tag: "POPULAR" },
-      { id: "tee-02", title: "Beer Nye", price: 400, checkoutUrl: "https://buy.stripe.com/test_234", img: "/shirts/beernye.jpg", tag: "BEER BEER BEER BEER" },
-      { id: "tee-03", title: "ID", price: 17000, checkoutUrl: "https://buy.stripe.com/test_345", img: "/shirts/id.jpg", tag: "GENESIS" },
-      { id: "tee-04", title: "CHKG HZRD", price: 4000000, checkoutUrl: "https://buy.stripe.com/test_456", img: "/shirts/chkghzrd.jpg", tag: "INSANE" },
-      { id: "tee-05", title: "fuck.", price: 1000000000, checkoutUrl: "https://buy.stripe.com/test_567", img: "/shirts/fuck.jpg", tag: "DAMN." },
-      { id: "tee-06", title: "MONDAY", price: 3500000000, checkoutUrl: "https://buy.stripe.com/test_678", img: "/shirts/monday.jpg", tag: "VINTAGE" },
-      { id: "tee-07", title: "Beer Out", price: 500, checkoutUrl: "https://buy.stripe.com/test_789", img: "/shirts/beerout.jpg", tag: "CLASSIC" },
-      { id: "tee-08", title: "DADDY SHARK", price: 750, checkoutUrl: "https://buy.stripe.com/test_890", img: "/shirts/daddyshark.jpg", tag: "OG" },
-      { id: "tee-09", title: "WING WEDNESDAY", price: 650, checkoutUrl: "https://buy.stripe.com/test_901", img: "/shirts/wingwednesday.jpg", tag: "IYKYK" },
+      { id: "tee-01", title: "Bricked Up", price: 35, img: "/shirts/brickedup.jpg", tag: "POPULAR" },
+      { id: "tee-02", title: "Beer Nye", price: 400, img: "/shirts/beernye.jpg", tag: "BEER BEER BEER BEER" },
+      { id: "tee-03", title: "ID", price: 17000, img: "/shirts/id.jpg", tag: "GENESIS" },
+      { id: "tee-04", title: "CHKG HZRD", price: 4000000, img: "/shirts/chkghzrd.jpg", tag: "INSANE" },
+      { id: "tee-05", title: "fuck.", price: 1000000000, img: "/shirts/fuck.jpg", tag: "DAMN." },
+      { id: "tee-06", title: "MONDAY", price: 3500000000, img: "/shirts/monday.jpg", tag: "VINTAGE" },
+      { id: "tee-07", title: "Beer Out", price: 500, img: "/shirts/beerout.jpg", tag: "CLASSIC" },
+      { id: "tee-08", title: "DADDY SHARK", price: 750, img: "/shirts/daddyshark.jpg", tag: "OG" },
+      { id: "tee-09", title: "WING WEDNESDAY", price: 650, img: "/shirts/wingwednesday.jpg", tag: "IYKYK" },
     ],
     []
   );
